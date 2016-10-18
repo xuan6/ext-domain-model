@@ -1,6 +1,6 @@
 //
 //  main.swift
-//  SimpleDomainModel
+//  ExtDomainModel
 //
 //  Created by Ted Neward on 4/6/16.
 //  Modified by Xuan Liu on 17/10/16

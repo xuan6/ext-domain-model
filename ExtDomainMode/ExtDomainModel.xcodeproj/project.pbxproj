@@ -52,7 +52,7 @@
 		B66E176D1DB5FB9C00CD9698 = {
 			isa = PBXGroup;
 			children = (
-				B66E17781DB5FB9C00CD9698 /* ExtDomainMode */,
+				B66E17781DB5FB9C00CD9698 /* ExtDomainModel */,
 				B66E17851DB6062600CD9698 /* unittest */,
 				B66E17771DB5FB9C00CD9698 /* Products */,
 			);
@@ -67,11 +67,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B66E17781DB5FB9C00CD9698 /* ExtDomainMode */ = {
+		B66E17781DB5FB9C00CD9698 /* ExtDomainModel */ = {
 			isa = PBXGroup;
 			children = (
 				B66E17791DB5FB9C00CD9698 /* main.swift */,
 			);
+			name = ExtDomainModel;
 			path = ExtDomainMode;
 			sourceTree = "<group>";
 		};
