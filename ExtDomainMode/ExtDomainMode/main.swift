@@ -20,12 +20,28 @@ open class TestMe {
         return "I have been tested"
     }
 }
+///add protocol////
+protocol CustomStringConvertible {
+    func description() -> String
+}
+
+protocol Mathematics {
+    func add(_ to: Money) -> Money
+    func subtract(_ from: Money) -> Money
+}
+
+func + (left: Money, right: Money) -> Money {
+    return left.add(right)
+}
+func - (left: Money, right: Money) -> Money {
+    return left.subtract(right)
+}
 
 ////////////////////////////////////
 // Money
 //
-public struct Money {
-    public var amount : Double
+public struct Money : CustomStringConvertible, Mathematics { //apply protocols
+    public var amount : Int
     public var currency : String
     
     public func convert(_ to: String) -> Money {
@@ -34,52 +50,52 @@ public struct Money {
         case "USD":
             switch to {
             case "GBP":
-                newAmount = amount * 0.5
+                newAmount = Double(amount) * 0.5
             case "EUR":
-                newAmount = amount * 1.5
+                newAmount = Double(amount) * 1.5
             case "CAN":
-                newAmount = amount * 1.25
+                newAmount = Double(amount) * 1.25
             case "USD":
-                newAmount = amount * 1
+                newAmount = Double(amount) * 1
             default:
                 print("Only converting to USD, GBP, EUR, and CAN is available.", terminator:"")
             }
         case "GBP":
             switch to {
             case "GBP":
-                newAmount = amount * 1
+                newAmount = Double(amount) * 1
             case "EUR":
-                newAmount = amount * 1.5
+                newAmount = Double(amount) * 1.5
             case "CAN":
-                newAmount = amount * 2.5
+                newAmount = Double(amount) * 2.5
             case "USD":
-                newAmount = amount * 2
+                newAmount = Double(amount) * 2
             default:
                 print("Only converting to USD, GBP, EUR, and CAN is available.", terminator:"")
             }
         case "EUR":
             switch to {
             case "GBP":
-                newAmount = amount / 3
+                newAmount = Double(amount) / 3
             case "EUR":
-                newAmount = amount * 1
+                newAmount = Double(amount) * 1
             case "CAN":
-                newAmount = amount / 6 * 5
+                newAmount = Double(amount) / 6 * 5
             case "USD":
-                newAmount = amount / 1.5
+                newAmount = Double(amount) / 1.5
             default:
                 print("Only converting to USD, GBP, EUR, and CAN is available.", terminator:"")
             }
         case "CAN":
             switch to {
             case "GBP":
-                newAmount = amount * 0.8
+                newAmount = Double(amount) * 0.8
             case "EUR":
-                newAmount = amount / 5 * 6
+                newAmount = Double(amount) / 5 * 6
             case "CAN":
-                newAmount = amount * 1
+                newAmount = Double(amount) * 1
             case "USD":
-                newAmount = amount / 1.25
+                newAmount = Double(amount) / 1.25
             default:
                 print("Only converting to USD, GBP, EUR, and CAN is available.", terminator:"")
             }
@@ -87,7 +103,7 @@ public struct Money {
         default:
             print("Only converting to USD, GBP, EUR, and CAN is available.", terminator:"")
         }
-        let newMoney = Money(amount: newAmount, currency: to) //update the amount and currency name
+        let newMoney = Money(amount: Int(newAmount), currency: to) //update the amount and currency name
         return newMoney
     }
     
@@ -105,6 +121,25 @@ public struct Money {
         let newCurrency = from.currency
         let newMoney =  Money(amount: newAmount, currency: newCurrency)
         return newMoney
+    }
+    
+    func description() -> String { //add description to Money
+        return "\(currency)\(amount)"
+    }
+}
+
+extension Double { //BEWARE extension only works for file scope, so write it outside the strcuct, class, func, etc.
+    var USD: Money {
+        return Money(amount: Int(self), currency: "USD")
+    }
+    var EUR: Money {
+        return Money(amount: Int(self / 1.5), currency: "EUR")
+    }
+    var GBP: Money {
+        return Money(amount: Int(self * 2), currency: "GBP")
+    }
+    var CAN: Money {
+        return Money(amount: Int(self / 1.25), currency: "CAN")
     }
 }
 ////////////////////////////////////
