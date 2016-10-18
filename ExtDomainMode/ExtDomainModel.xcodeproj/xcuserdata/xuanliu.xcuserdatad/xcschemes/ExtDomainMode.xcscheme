@@ -47,6 +47,11 @@
                BlueprintName = "ExtDomainModelTest"
                ReferencedContainer = "container:ExtDomainModel.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "ExtDomainModelTest">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
