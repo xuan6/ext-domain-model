@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B66E177A1DB5FB9C00CD9698 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E17791DB5FB9C00CD9698 /* main.swift */; };
+		B66E17871DB6062600CD9698 /* unittest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E17861DB6062600CD9698 /* unittest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +26,20 @@
 /* Begin PBXFileReference section */
 		B66E17761DB5FB9C00CD9698 /* ExtDomainMode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExtDomainMode; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66E17791DB5FB9C00CD9698 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B66E17841DB6062600CD9698 /* unittest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unittest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B66E17861DB6062600CD9698 /* unittest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unittest.swift; sourceTree = "<group>"; };
+		B66E17881DB6062600CD9698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B66E17731DB5FB9C00CD9698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B66E17811DB6062600CD9698 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				B66E17781DB5FB9C00CD9698 /* ExtDomainMode */,
+				B66E17851DB6062600CD9698 /* unittest */,
 				B66E17771DB5FB9C00CD9698 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				B66E17761DB5FB9C00CD9698 /* ExtDomainMode */,
+				B66E17841DB6062600CD9698 /* unittest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +73,15 @@
 				B66E17791DB5FB9C00CD9698 /* main.swift */,
 			);
 			path = ExtDomainMode;
+			sourceTree = "<group>";
+		};
+		B66E17851DB6062600CD9698 /* unittest */ = {
+			isa = PBXGroup;
+			children = (
+				B66E17861DB6062600CD9698 /* unittest.swift */,
+				B66E17881DB6062600CD9698 /* Info.plist */,
+			);
+			path = unittest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +104,23 @@
 			productReference = B66E17761DB5FB9C00CD9698 /* ExtDomainMode */;
 			productType = "com.apple.product-type.tool";
 		};
+		B66E17831DB6062600CD9698 /* unittest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B66E17891DB6062600CD9698 /* Build configuration list for PBXNativeTarget "unittest" */;
+			buildPhases = (
+				B66E17801DB6062600CD9698 /* Sources */,
+				B66E17811DB6062600CD9698 /* Frameworks */,
+				B66E17821DB6062600CD9698 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = unittest;
+			productName = unittest;
+			productReference = B66E17841DB6062600CD9698 /* unittest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +132,11 @@
 				ORGANIZATIONNAME = "Xuan Liu";
 				TargetAttributes = {
 					B66E17751DB5FB9C00CD9698 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = J8HX8W773Z;
+						ProvisioningStyle = Automatic;
+					};
+					B66E17831DB6062600CD9698 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = J8HX8W773Z;
 						ProvisioningStyle = Automatic;
@@ -112,9 +156,20 @@
 			projectRoot = "";
 			targets = (
 				B66E17751DB5FB9C00CD9698 /* ExtDomainMode */,
+				B66E17831DB6062600CD9698 /* unittest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B66E17821DB6062600CD9698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B66E17721DB5FB9C00CD9698 /* Sources */ = {
@@ -122,6 +177,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B66E177A1DB5FB9C00CD9698 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B66E17801DB6062600CD9698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66E17871DB6062600CD9698 /* unittest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +297,34 @@
 			};
 			name = Release;
 		};
+		B66E178A1DB6062600CD9698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J8HX8W773Z;
+				INFOPLIST_FILE = unittest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuanliux.unittest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B66E178B1DB6062600CD9698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J8HX8W773Z;
+				INFOPLIST_FILE = unittest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuanliux.unittest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -251,6 +342,14 @@
 			buildConfigurations = (
 				B66E177E1DB5FB9D00CD9698 /* Debug */,
 				B66E177F1DB5FB9D00CD9698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B66E17891DB6062600CD9698 /* Build configuration list for PBXNativeTarget "unittest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B66E178A1DB6062600CD9698 /* Debug */,
+				B66E178B1DB6062600CD9698 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
