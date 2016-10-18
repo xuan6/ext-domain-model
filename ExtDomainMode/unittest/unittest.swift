@@ -16,13 +16,13 @@ class MoneyTests: XCTestCase {
     
     
     func testAdd(){
-        let result = +(left:usd1, right:usd2)
+        let result = usd1 + usd2
         XCTAssert(result.currency == "USD")
         XCTAssert(result.amount == 7)
     }
     
     func testSub(){
-        let result = -(left:usd1, right:usd2)
+        let result = usd1 - usd2
         XCTAssert(result.currency == "USD")
         XCTAssert(result.amount == 3)
     }

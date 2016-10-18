@@ -19,7 +19,7 @@
                BlueprintIdentifier = "B66E17831DB6062600CD9698"
                BuildableName = "unittest.xctest"
                BlueprintName = "unittest"
-               ReferencedContainer = "container:ExtDomainMode.xcodeproj">
+               ReferencedContainer = "container:ExtDomainModel.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

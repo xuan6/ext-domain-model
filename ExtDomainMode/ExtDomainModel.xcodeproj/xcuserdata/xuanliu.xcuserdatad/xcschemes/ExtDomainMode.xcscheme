@@ -17,7 +17,7 @@
                BlueprintIdentifier = "B66E17751DB5FB9C00CD9698"
                BuildableName = "ExtDomainMode"
                BlueprintName = "ExtDomainMode"
-               ReferencedContainer = "container:ExtDomainMode.xcodeproj">
+               ReferencedContainer = "container:ExtDomainModel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "B66E17751DB5FB9C00CD9698"
             BuildableName = "ExtDomainMode"
             BlueprintName = "ExtDomainMode"
-            ReferencedContainer = "container:ExtDomainMode.xcodeproj">
+            ReferencedContainer = "container:ExtDomainModel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "B66E17751DB5FB9C00CD9698"
             BuildableName = "ExtDomainMode"
             BlueprintName = "ExtDomainMode"
-            ReferencedContainer = "container:ExtDomainMode.xcodeproj">
+            ReferencedContainer = "container:ExtDomainModel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "B66E17751DB5FB9C00CD9698"
             BuildableName = "ExtDomainMode"
             BlueprintName = "ExtDomainMode"
-            ReferencedContainer = "container:ExtDomainMode.xcodeproj">
+            ReferencedContainer = "container:ExtDomainModel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
