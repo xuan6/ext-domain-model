@@ -133,13 +133,13 @@ extension Double { //BEWARE extension only works for file scope, so write it out
         return Money(amount: Int(self), currency: "USD")
     }
     var EUR: Money {
-        return Money(amount: Int(self / 1.5), currency: "EUR")
+        return Money(amount: Int(self), currency: "EUR")
     }
     var GBP: Money {
-        return Money(amount: Int(self * 2), currency: "GBP")
+        return Money(amount: Int(self), currency: "GBP")
     }
     var CAN: Money {
-        return Money(amount: Int(self / 1.25), currency: "CAN")
+        return Money(amount: Int(self), currency: "CAN")
     }
 }
 ////////////////////////////////////

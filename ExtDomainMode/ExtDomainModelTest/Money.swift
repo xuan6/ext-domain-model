@@ -1,13 +1,13 @@
 //
-//  unittest.swift
-//  unittest
+//  Money.swift
+//  ExtDomainModel
 //
 //  Created by Xuan Liu on 16/10/18.
 //  Copyright © 2016年 Xuan Liu. All rights reserved.
 //
 
 import XCTest
-import ExtDomainModel
+import ExtDomainMode
 
 class CustomMoneyTest: XCTestCase {
     
@@ -17,25 +17,25 @@ class CustomMoneyTest: XCTestCase {
     }
     
     func testCanICreateMoney2() {
-        let fiftyTwoUSD = Money(amount: 52, currency: "USD")
-        XCTAssert(fiftyTwoUSD.description() == "USD52.0")
+        let fiftyFiveUSD = Money(amount: 55, currency: "USD")
+        XCTAssert(fiftyFiveUSD.description() == "USD55.0")
     }
     
-    func testPlus() {
-        let money = Money(amount: 35, currency: "USD")
-        let otherMoney = Money(amount: 20, currency: "USD")
-        let resultMoney = Money(amount: 55, currency: "USD")
-        XCTAssert((money + otherMoney).amount == 55)
+    func testAdd() {
+        let money = Money(amount: 3, currency: "USD")
+        let otherMoney = Money(amount: 2, currency: "USD")
+        let resultMoney = Money(amount: 5, currency: "USD")
+        XCTAssert((money + otherMoney).amount == 5)
         XCTAssert((money + otherMoney).currency == "USD")
         XCTAssert((money + otherMoney).amount == resultMoney.amount)
         XCTAssert((money + otherMoney).currency == resultMoney.currency)
     }
     
-    func testMinus() {
-        let money = Money(amount: 35, currency: "USD")
-        let otherMoney = Money(amount: 20, currency: "USD")
-        let resultMoney = Money(amount: 15, currency: "USD")
-        XCTAssert((money - otherMoney).amount == 15)
+    func testSub() {
+        let money = Money(amount: 3, currency: "USD")
+        let otherMoney = Money(amount: 2, currency: "USD")
+        let resultMoney = Money(amount: 1, currency: "USD")
+        XCTAssert((money - otherMoney).amount == 1)
         XCTAssert((money - otherMoney).currency == "USD")
         XCTAssert((money - otherMoney).amount == resultMoney.amount)
         XCTAssert((money - otherMoney).currency == resultMoney.currency)
@@ -44,17 +44,16 @@ class CustomMoneyTest: XCTestCase {
     
     func testMoneyEUR() {
         let money1 = 150.0.EUR
-        XCTAssert(money1.description() == "EUR100.0")
+        XCTAssert(money1.description() == "EUR150")
     }
     
     func testMoneyGBP() {
         let money1 = 150.0.GBP
-        XCTAssert(money1.description() == "GBP300.0")
+        XCTAssert(money1.description() == "GBP150")
     }
     
     func testMoneyCAN() {
         let money1 = 150.0.CAN
-        XCTAssert(money1.description() == "CAN120.0")
+        XCTAssert(money1.description() == "CAN150")
     }
-    
 }
