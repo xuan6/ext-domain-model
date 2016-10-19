@@ -5,9 +5,8 @@
 //  Created by Xuan Liu on 16/10/18.
 //  Copyright © 2016年 Xuan Liu. All rights reserved.
 //
-    
+
 import XCTest
-import ExtDomainMode
 
 class ExtDomainModelTest: XCTestCase {
     
@@ -24,11 +23,13 @@ class ExtDomainModelTest: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        XCTAssert(testMe() == "I have been tested")
     }
     
-    func testClassExample() {
-        let test = TestMe()
-        XCTAssert(test.Please() == "I have been tested")
+    func testPerformanceExample() {
+        // This is an example of a performance test case.
+        self.measure {
+            // Put the code you want to measure the time of here.
+        }
     }
+    
 }

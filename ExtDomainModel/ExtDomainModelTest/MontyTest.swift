@@ -1,5 +1,5 @@
 //
-//  Money.swift
+//  MontyTest.swift
 //  ExtDomainModel
 //
 //  Created by Xuan Liu on 16/10/18.
@@ -9,9 +9,19 @@
 import XCTest
 import ExtDomainMode
 
-class CustomMoneyTest: XCTestCase {
+class MontyTest: XCTestCase {
+
+    override func setUp() {
+        super.setUp()
+        // Put setup code here. This method is called before the invocation of each test method in the class.
+    }
     
-    func testCanICreateMoney1() {
+    override func tearDown() {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
+    }
+        
+    func testCanICreateMoney1() { //BEAWARE all test must start literally with 'test'
         let twentyTwoEUR = Money(amount: 22, currency: "EUR")
         XCTAssert(twentyTwoEUR.description() == "EUR22.0")
     }

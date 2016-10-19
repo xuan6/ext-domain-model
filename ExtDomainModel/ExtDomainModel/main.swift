@@ -30,10 +30,10 @@ protocol Mathematics {
     func subtract(_ from: Money) -> Money
 }
 
-func + (left: Money, right: Money) -> Money {
+public func + (left: Money, right: Money) -> Money {
     return left.add(right)
 }
-func - (left: Money, right: Money) -> Money {
+public func - (left: Money, right: Money) -> Money {
     return left.subtract(right)
 }
 
@@ -123,8 +123,13 @@ public struct Money : CustomStringConvertible, Mathematics { //apply protocols
         return newMoney
     }
     
-    func description() -> String { //add description to Money
+    public func description() -> String { //add description to Money
         return "\(currency)\(amount)"
+    }
+    
+    public init(amount:Int, currency:String){
+        self.currency = currency
+        self.amount = amount
     }
 }
 

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B66E17751DB5FB9C00CD9698"
-               BuildableName = "ExtDomainMode"
-               BlueprintName = "ExtDomainMode"
+               BlueprintIdentifier = "B64339121DB7389A008D73A8"
+               BuildableName = "ExtDomainModel"
+               BlueprintName = "ExtDomainModel"
                ReferencedContainer = "container:ExtDomainModel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,38 +28,13 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B66E17831DB6062600CD9698"
-               BuildableName = "unittest.xctest"
-               BlueprintName = "unittest"
-               ReferencedContainer = "container:ExtDomainModel.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B66E178F1DB67BE900CD9698"
-               BuildableName = "ExtDomainModelTest.xctest"
-               BlueprintName = "ExtDomainModelTest"
-               ReferencedContainer = "container:ExtDomainModel.xcodeproj">
-            </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "ExtDomainModelTest">
-               </Test>
-            </SkippedTests>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B66E17751DB5FB9C00CD9698"
-            BuildableName = "ExtDomainMode"
-            BlueprintName = "ExtDomainMode"
+            BlueprintIdentifier = "B64339121DB7389A008D73A8"
+            BuildableName = "ExtDomainModel"
+            BlueprintName = "ExtDomainModel"
             ReferencedContainer = "container:ExtDomainModel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -80,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B66E17751DB5FB9C00CD9698"
-            BuildableName = "ExtDomainMode"
-            BlueprintName = "ExtDomainMode"
+            BlueprintIdentifier = "B64339121DB7389A008D73A8"
+            BuildableName = "ExtDomainModel"
+            BlueprintName = "ExtDomainModel"
             ReferencedContainer = "container:ExtDomainModel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -99,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B66E17751DB5FB9C00CD9698"
-            BuildableName = "ExtDomainMode"
-            BlueprintName = "ExtDomainMode"
+            BlueprintIdentifier = "B64339121DB7389A008D73A8"
+            BuildableName = "ExtDomainModel"
+            BlueprintName = "ExtDomainModel"
             ReferencedContainer = "container:ExtDomainModel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

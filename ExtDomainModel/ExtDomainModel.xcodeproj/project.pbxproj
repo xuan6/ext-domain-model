@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B66E177A1DB5FB9C00CD9698 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E17791DB5FB9C00CD9698 /* main.swift */; };
-		B66E17931DB67BE900CD9698 /* ExtDomainModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E17921DB67BE900CD9698 /* ExtDomainModelTest.swift */; };
-		B66E17991DB67D6900CD9698 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E17981DB67D6900CD9698 /* Money.swift */; };
+		B64339171DB7389A008D73A8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64339161DB7389A008D73A8 /* main.swift */; };
+		B64339241DB738EF008D73A8 /* ExtDomainModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64339231DB738EF008D73A8 /* ExtDomainModelTest.swift */; };
+		B643392A1DB7390F008D73A8 /* MontyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64339291DB7390F008D73A8 /* MontyTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B66E17741DB5FB9C00CD9698 /* CopyFiles */ = {
+		B64339111DB7389A008D73A8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,31 +25,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B66E17761DB5FB9C00CD9698 /* ExtDomainMode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExtDomainMode; sourceTree = BUILT_PRODUCTS_DIR; };
-		B66E17791DB5FB9C00CD9698 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		B66E17841DB6062600CD9698 /* unittest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unittest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B66E17901DB67BE900CD9698 /* ExtDomainModelTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtDomainModelTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B66E17921DB67BE900CD9698 /* ExtDomainModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtDomainModelTest.swift; sourceTree = "<group>"; };
-		B66E17941DB67BE900CD9698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B66E17981DB67D6900CD9698 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		B64339131DB7389A008D73A8 /* ExtDomainModel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExtDomainModel; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64339161DB7389A008D73A8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B64339211DB738EF008D73A8 /* ExtDomainModelTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtDomainModelTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64339231DB738EF008D73A8 /* ExtDomainModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtDomainModelTest.swift; sourceTree = "<group>"; };
+		B64339251DB738EF008D73A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B64339291DB7390F008D73A8 /* MontyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MontyTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B66E17731DB5FB9C00CD9698 /* Frameworks */ = {
+		B64339101DB7389A008D73A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B66E17811DB6062600CD9698 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B66E178D1DB67BE900CD9698 /* Frameworks */ = {
+		B643391E1DB738EF008D73A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,40 +51,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B66E176D1DB5FB9C00CD9698 = {
+		B643390A1DB7389A008D73A8 = {
 			isa = PBXGroup;
 			children = (
-				B66E17781DB5FB9C00CD9698 /* ExtDomainModel */,
-				B66E17911DB67BE900CD9698 /* ExtDomainModelTest */,
-				B66E17771DB5FB9C00CD9698 /* Products */,
+				B64339151DB7389A008D73A8 /* ExtDomainModel */,
+				B64339221DB738EF008D73A8 /* ExtDomainModelTest */,
+				B64339141DB7389A008D73A8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B66E17771DB5FB9C00CD9698 /* Products */ = {
+		B64339141DB7389A008D73A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B66E17761DB5FB9C00CD9698 /* ExtDomainMode */,
-				B66E17841DB6062600CD9698 /* unittest.xctest */,
-				B66E17901DB67BE900CD9698 /* ExtDomainModelTest.xctest */,
+				B64339131DB7389A008D73A8 /* ExtDomainModel */,
+				B64339211DB738EF008D73A8 /* ExtDomainModelTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B66E17781DB5FB9C00CD9698 /* ExtDomainModel */ = {
+		B64339151DB7389A008D73A8 /* ExtDomainModel */ = {
 			isa = PBXGroup;
 			children = (
-				B66E17791DB5FB9C00CD9698 /* main.swift */,
+				B64339161DB7389A008D73A8 /* main.swift */,
 			);
-			name = ExtDomainModel;
-			path = ExtDomainMode;
+			path = ExtDomainModel;
 			sourceTree = "<group>";
 		};
-		B66E17911DB67BE900CD9698 /* ExtDomainModelTest */ = {
+		B64339221DB738EF008D73A8 /* ExtDomainModelTest */ = {
 			isa = PBXGroup;
 			children = (
-				B66E17981DB67D6900CD9698 /* Money.swift */,
-				B66E17921DB67BE900CD9698 /* ExtDomainModelTest.swift */,
-				B66E17941DB67BE900CD9698 /* Info.plist */,
+				B64339291DB7390F008D73A8 /* MontyTest.swift */,
+				B64339231DB738EF008D73A8 /* ExtDomainModelTest.swift */,
+				B64339251DB738EF008D73A8 /* Info.plist */,
 			);
 			path = ExtDomainModelTest;
 			sourceTree = "<group>";
@@ -100,47 +90,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B66E17751DB5FB9C00CD9698 /* ExtDomainMode */ = {
+		B64339121DB7389A008D73A8 /* ExtDomainModel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B66E177D1DB5FB9D00CD9698 /* Build configuration list for PBXNativeTarget "ExtDomainMode" */;
+			buildConfigurationList = B643391A1DB7389A008D73A8 /* Build configuration list for PBXNativeTarget "ExtDomainModel" */;
 			buildPhases = (
-				B66E17721DB5FB9C00CD9698 /* Sources */,
-				B66E17731DB5FB9C00CD9698 /* Frameworks */,
-				B66E17741DB5FB9C00CD9698 /* CopyFiles */,
+				B643390F1DB7389A008D73A8 /* Sources */,
+				B64339101DB7389A008D73A8 /* Frameworks */,
+				B64339111DB7389A008D73A8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ExtDomainMode;
-			productName = ExtDomainMode;
-			productReference = B66E17761DB5FB9C00CD9698 /* ExtDomainMode */;
+			name = ExtDomainModel;
+			productName = ExtDomainModel;
+			productReference = B64339131DB7389A008D73A8 /* ExtDomainModel */;
 			productType = "com.apple.product-type.tool";
 		};
-		B66E17831DB6062600CD9698 /* unittest */ = {
+		B64339201DB738EF008D73A8 /* ExtDomainModelTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B66E17891DB6062600CD9698 /* Build configuration list for PBXNativeTarget "unittest" */;
+			buildConfigurationList = B64339261DB738EF008D73A8 /* Build configuration list for PBXNativeTarget "ExtDomainModelTest" */;
 			buildPhases = (
-				B66E17801DB6062600CD9698 /* Sources */,
-				B66E17811DB6062600CD9698 /* Frameworks */,
-				B66E17821DB6062600CD9698 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = unittest;
-			productName = unittest;
-			productReference = B66E17841DB6062600CD9698 /* unittest.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B66E178F1DB67BE900CD9698 /* ExtDomainModelTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B66E17951DB67BE900CD9698 /* Build configuration list for PBXNativeTarget "ExtDomainModelTest" */;
-			buildPhases = (
-				B66E178C1DB67BE900CD9698 /* Sources */,
-				B66E178D1DB67BE900CD9698 /* Frameworks */,
-				B66E178E1DB67BE900CD9698 /* Resources */,
+				B643391D1DB738EF008D73A8 /* Sources */,
+				B643391E1DB738EF008D73A8 /* Frameworks */,
+				B643391F1DB738EF008D73A8 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -148,64 +121,51 @@
 			);
 			name = ExtDomainModelTest;
 			productName = ExtDomainModelTest;
-			productReference = B66E17901DB67BE900CD9698 /* ExtDomainModelTest.xctest */;
+			productReference = B64339211DB738EF008D73A8 /* ExtDomainModelTest.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B66E176E1DB5FB9C00CD9698 /* Project object */ = {
+		B643390B1DB7389A008D73A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Xuan Liu";
 				TargetAttributes = {
-					B66E17751DB5FB9C00CD9698 = {
+					B64339121DB7389A008D73A8 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = J8HX8W773Z;
 						ProvisioningStyle = Automatic;
 					};
-					B66E17831DB6062600CD9698 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = J8HX8W773Z;
-						ProvisioningStyle = Automatic;
-					};
-					B66E178F1DB67BE900CD9698 = {
+					B64339201DB738EF008D73A8 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = J8HX8W773Z;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = B66E17711DB5FB9C00CD9698 /* Build configuration list for PBXProject "ExtDomainModel" */;
+			buildConfigurationList = B643390E1DB7389A008D73A8 /* Build configuration list for PBXProject "ExtDomainModel" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = B66E176D1DB5FB9C00CD9698;
-			productRefGroup = B66E17771DB5FB9C00CD9698 /* Products */;
+			mainGroup = B643390A1DB7389A008D73A8;
+			productRefGroup = B64339141DB7389A008D73A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B66E17751DB5FB9C00CD9698 /* ExtDomainMode */,
-				B66E17831DB6062600CD9698 /* unittest */,
-				B66E178F1DB67BE900CD9698 /* ExtDomainModelTest */,
+				B64339121DB7389A008D73A8 /* ExtDomainModel */,
+				B64339201DB738EF008D73A8 /* ExtDomainModelTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B66E17821DB6062600CD9698 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B66E178E1DB67BE900CD9698 /* Resources */ = {
+		B643391F1DB738EF008D73A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -215,34 +175,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B66E17721DB5FB9C00CD9698 /* Sources */ = {
+		B643390F1DB7389A008D73A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B66E177A1DB5FB9C00CD9698 /* main.swift in Sources */,
+				B64339171DB7389A008D73A8 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B66E17801DB6062600CD9698 /* Sources */ = {
+		B643391D1DB738EF008D73A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B66E178C1DB67BE900CD9698 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B66E17991DB67D6900CD9698 /* Money.swift in Sources */,
-				B66E17931DB67BE900CD9698 /* ExtDomainModelTest.swift in Sources */,
+				B64339241DB738EF008D73A8 /* ExtDomainModelTest.swift in Sources */,
+				B643392A1DB7390F008D73A8 /* MontyTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B66E177B1DB5FB9D00CD9698 /* Debug */ = {
+		B64339181DB7389A008D73A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -290,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		B66E177C1DB5FB9D00CD9698 /* Release */ = {
+		B64339191DB7389A008D73A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -330,7 +283,7 @@
 			};
 			name = Release;
 		};
-		B66E177E1DB5FB9D00CD9698 /* Debug */ = {
+		B643391B1DB7389A008D73A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = J8HX8W773Z;
@@ -339,7 +292,7 @@
 			};
 			name = Debug;
 		};
-		B66E177F1DB5FB9D00CD9698 /* Release */ = {
+		B643391C1DB7389A008D73A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = J8HX8W773Z;
@@ -348,35 +301,7 @@
 			};
 			name = Release;
 		};
-		B66E178A1DB6062600CD9698 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = J8HX8W773Z;
-				INFOPLIST_FILE = unittest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xuanliux.unittest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		B66E178B1DB6062600CD9698 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = J8HX8W773Z;
-				INFOPLIST_FILE = unittest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xuanliux.unittest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		B66E17961DB67BE900CD9698 /* Debug */ = {
+		B64339271DB738EF008D73A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -390,7 +315,7 @@
 			};
 			name = Debug;
 		};
-		B66E17971DB67BE900CD9698 /* Release */ = {
+		B64339281DB738EF008D73A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -407,40 +332,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B66E17711DB5FB9C00CD9698 /* Build configuration list for PBXProject "ExtDomainModel" */ = {
+		B643390E1DB7389A008D73A8 /* Build configuration list for PBXProject "ExtDomainModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B66E177B1DB5FB9D00CD9698 /* Debug */,
-				B66E177C1DB5FB9D00CD9698 /* Release */,
+				B64339181DB7389A008D73A8 /* Debug */,
+				B64339191DB7389A008D73A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B66E177D1DB5FB9D00CD9698 /* Build configuration list for PBXNativeTarget "ExtDomainMode" */ = {
+		B643391A1DB7389A008D73A8 /* Build configuration list for PBXNativeTarget "ExtDomainModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B66E177E1DB5FB9D00CD9698 /* Debug */,
-				B66E177F1DB5FB9D00CD9698 /* Release */,
+				B643391B1DB7389A008D73A8 /* Debug */,
+				B643391C1DB7389A008D73A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		B66E17891DB6062600CD9698 /* Build configuration list for PBXNativeTarget "unittest" */ = {
+		B64339261DB738EF008D73A8 /* Build configuration list for PBXNativeTarget "ExtDomainModelTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B66E178A1DB6062600CD9698 /* Debug */,
-				B66E178B1DB6062600CD9698 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		B66E17951DB67BE900CD9698 /* Build configuration list for PBXNativeTarget "ExtDomainModelTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B66E17961DB67BE900CD9698 /* Debug */,
-				B66E17971DB67BE900CD9698 /* Release */,
+				B64339271DB738EF008D73A8 /* Debug */,
+				B64339281DB738EF008D73A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B66E176E1DB5FB9C00CD9698 /* Project object */;
+	rootObject = B643390B1DB7389A008D73A8 /* Project object */;
 }
