@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import ExtDomainMode
+import ExtDomainModel
 
 class MontyTest: XCTestCase {
 
