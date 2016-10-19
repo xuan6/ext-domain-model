@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import ExtDomainModel
 
 class ExtDomainModelTest: XCTestCase {
     
