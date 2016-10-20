@@ -58,12 +58,12 @@ class MontyTest: XCTestCase {
     }
     
     func testMoneyGBP() {
-        let money1 = 150.0.GBP
+        let money2 = 150.0.GBP
         XCTAssert(money1.description() == "GBP150")
     }
     
     func testMoneyCAN() {
-        let money1 = 150.0.CAN
+        let money3 = 150.0.CAN
         XCTAssert(money1.description() == "CAN150")
     }
 }
