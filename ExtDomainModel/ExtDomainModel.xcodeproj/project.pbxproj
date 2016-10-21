@@ -10,6 +10,7 @@
 		B64339171DB7389A008D73A8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64339161DB7389A008D73A8 /* main.swift */; };
 		B64339241DB738EF008D73A8 /* ExtDomainModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64339231DB738EF008D73A8 /* ExtDomainModelTest.swift */; };
 		B643392A1DB7390F008D73A8 /* MontyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64339291DB7390F008D73A8 /* MontyTest.swift */; };
+		B64339691DB9B251008D73A8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64339161DB7389A008D73A8 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -189,6 +190,7 @@
 			files = (
 				B64339241DB738EF008D73A8 /* ExtDomainModelTest.swift in Sources */,
 				B643392A1DB7390F008D73A8 /* MontyTest.swift in Sources */,
+				B64339691DB9B251008D73A8 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

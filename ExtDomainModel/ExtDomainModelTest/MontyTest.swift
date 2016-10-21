@@ -23,12 +23,12 @@ class MontyTest: XCTestCase {
         
     func testCanICreateMoney1() { //BEAWARE all test must start literally with 'test'
         let twentyTwoEUR = Money(amount: 22, currency: "EUR")
-        XCTAssert(twentyTwoEUR.description() == "EUR22.0")
+        XCTAssert(twentyTwoEUR.description() == "EUR22")
     }
     
     func testCanICreateMoney2() {
         let fiftyFiveUSD = Money(amount: 55, currency: "USD")
-        XCTAssert(fiftyFiveUSD.description() == "USD55.0")
+        XCTAssert(fiftyFiveUSD.description() == "USD55")
     }
     
     func testAdd() {
@@ -59,11 +59,11 @@ class MontyTest: XCTestCase {
     
     func testMoneyGBP() {
         let money2 = 150.0.GBP
-        XCTAssert(money1.description() == "GBP150")
+        XCTAssert(money2.description() == "GBP150")
     }
     
     func testMoneyCAN() {
         let money3 = 150.0.CAN
-        XCTAssert(money1.description() == "CAN150")
+        XCTAssert(money3.description() == "CAN150")
     }
 }

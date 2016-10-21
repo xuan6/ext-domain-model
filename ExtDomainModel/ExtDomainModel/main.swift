@@ -133,17 +133,17 @@ public struct Money : CustomStringConvertible, Mathematics { //apply protocols
     }
 }
 
-extension Double { //BEWARE extension only works for file scope, so write it outside the strcuct, class, func, etc.
-    var USD: Money {
+public extension Double { //BEWARE extension only works for file scope, so write it outside the strcuct, class, func, etc.
+    public var USD: Money {
         return Money(amount: Int(self), currency: "USD")
     }
-    var EUR: Money {
+    public var EUR: Money {
         return Money(amount: Int(self), currency: "EUR")
     }
-    var GBP: Money {
+    public var GBP: Money {
         return Money(amount: Int(self), currency: "GBP")
     }
-    var CAN: Money {
+    public var CAN: Money {
         return Money(amount: Int(self), currency: "CAN")
     }
 }
